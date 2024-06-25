@@ -3,8 +3,23 @@ import Layout from '../layouts/Layout.astro';
 import Card from '../components/Card.astro';
 ---
 
-<Layout title="Welcome to Astro.">
-	<h1 class="text-xl text-red-700">Hello World</h1>
+<Layout title="Four Card Section">
+	<main class="max-w-full p-12 md:p-0">
+		
+		<section class="w-full md:w-[60%] mx-auto text-center">
+			<hgroup class="mb-4">
+					<h1 class="font-principal font-thin text-2xl md:text-3xl text-[#a3a5ae]">Reliable, efficent delivery</h1>
+					<h2 class="font-principal font-semibold text-2xl md:text-3xl text-[#4c4e61]">Powered by Technology</h2>
+			</hgroup>
+
+			<section>
+				<p class="font-principal text-[#a3a5ae]">
+					Our Artificial Intelligence powered tools use millions of project data points to ensure that your project is successfull.
+				</p>
+			</section>
+		</section>
+
+	</main>
 </Layout>
 
 
