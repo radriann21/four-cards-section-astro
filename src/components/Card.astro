@@ -4,15 +4,17 @@ interface Props {
 	title: string;
 	text: string;
 	icon: string;
+	firstPosition?: string;
+	secondPosition?: string;
 }
 
-const { borderColor, title, text, icon } = Astro.props;
+const { borderColor, title, text, icon, firstPosition, secondPosition } = Astro.props;
 ---
 
-<article class=`w-[100%] h-[180px] border-t-4 ${borderColor} shadow-lg rounded-md p-6 relative`>
+<article class=`lg:w-[26%] md:w-[50%] w-full h-[160px] border-t-4 relative lg:absolute ${borderColor} ${firstPosition} ${secondPosition} shadow-lg rounded-md p-6 relative`>
 	<section class="font-principal text-left">
 		<h3 class="text-[#4c4e61] font-semibold">{title}</h3>
 		<p class="text-sm text-[#a3a5ae]">{text}</p>
 	</section>
-	<img class="w-10 h-10 absolute bottom-6 right-6" src={icon} alt="icon">
+	<img class="w-8 h-8 absolute bottom-6 right-6" src={icon} alt="icon">
 </article>

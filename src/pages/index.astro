@@ -4,9 +4,9 @@ import Card from '../components/Card.astro';
 ---
 
 <Layout title="Four Card Section">
-	<main class="max-w-full p-12 md:p-0">
+	<main class="w-full p-12 md:p-0">
 		
-		<section class="w-full md:w-[60%] mx-auto text-center">
+		<section class="w-full md:w-[40%] mx-auto text-center">
 			<hgroup class="mb-4">
 					<h1 class="font-principal font-thin text-2xl md:text-3xl text-[#a3a5ae]">Reliable, efficent delivery</h1>
 					<h2 class="font-principal font-semibold text-2xl md:text-3xl text-[#4c4e61]">Powered by Technology</h2>
@@ -19,12 +19,14 @@ import Card from '../components/Card.astro';
 			</section>
 		</section>
 
-		<section class="flex flex-col items-center space-y-10 relative w-full h-full mt-8">
+		<section class="flex flex-col items-center space-y-10 lg:space-y-0 relative w-full lg:h-[380px] mt-8">
 			<Card 
 				borderColor='border-cyan-600'
 				title='Supervisor'
 				text='Monitors activity to identify project roadblocks'
 				icon='/images/icon-supervisor.svg'
+				firstPosition='lg:left-20'
+				secondPosition='lg:top-[30%]'
 			/>
 			<Card 
 				borderColor='border-red-600'
@@ -37,12 +39,16 @@ import Card from '../components/Card.astro';
 			title='Karma'
 			text='Regularly evaluates our talent to ensure quality'
 			icon='/images/icon-karma.svg'
+			firstPosition='lg:bottom-0'
+
 		/>
 		<Card 
 			borderColor='border-blue-600'
 			title='Calculator'
 			text='Uses data from past projects to provide a better delivery estimates'
 			icon='/images/icon-calculator.svg'
+			firstPosition='lg:right-20'
+			secondPosition='lg:top-[30%]'
 		/>
 		</section>
 
